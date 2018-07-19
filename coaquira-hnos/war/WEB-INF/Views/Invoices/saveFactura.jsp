@@ -26,28 +26,36 @@
 	<div class="col-xs-3">
 	<%String nombrecl = (String)request.getAttribute("nameCL");%>
 		<label for="nameCL">Señor(es)(Nombre-Apellido) :</label>
-		<input class="form-control" type="text" name="nameCL" maxlength="20" value=<%=nombrecl%> pattern="([a-Z]{5,20})-([a-Z]{5,20})" title="La descripcion debe tener de 5 a 20 caracteres" required/>
+		<%if(nombrecl==null) {%><input class="form-control" type="text" name="nameCL" maxlength="20"  pattern="([a-Z]{5,20})-([a-Z]{5,20})" title="La descripcion debe tener de 5 a 20 caracteres" required/>
+		<%}else{%><input class="form-control" type="text" name="nameCL" maxlength="20" value=<%=nombrecl%> pattern="([a-Z]{5,20})-([a-Z]{5,20})" title="La descripcion debe tener de 5 a 20 caracteres" required/>
+		<%} %>
 	</div>
 	</div>
 	<div class="form-group row">
 	<div class="col-xs-3">
 	<%String ruccl = (String)request.getAttribute("rucCL");%>
 		<label for="rucCL">RUC N° :</label>
-		<input class="form-control" type="text" name="rucCL" maxlength="11" value=<%=ruccl%> pattern="((10|20)[0-9]{9})" title="Este Ruc no es valido" required/>
+		<%if(ruccl==null) {%><input class="form-control" type="text" name="rucCL" maxlength="11"  pattern="((10|20)[0-9]{9})" title="Este Ruc no es valido" required/>
+	    <%}else{%><input class="form-control" type="text" name="rucCL" maxlength="11" value=<%=ruccl%> pattern="((10|20)[0-9]{9})" title="Este Ruc no es valido" required/>
+	    <%} %>
 	</div>
 	</div>
 	<div class="form-group row">
 	<div class="col-xs-3">
 	<%String direc = (String)request.getAttribute("direccion");%>
 		<label for="direccion">Direccion(Nombre-Numero) :</label>
-		<input class="form-control" type="text" name="direccion" maxlength="30" value=<%=direc%> pattern="[a-Z]{5,30}" title="La descripcion debe tener de 5 a 30 caracteres" required/>
+		<%if(direc==null) {%><input class="form-control" type="text" name="direccion" maxlength="30"  pattern="[a-Z]{5,30}" title="La descripcion debe tener de 5 a 30 caracteres" required/>
+		<%}else{%><input class="form-control" type="text" name="direccion" maxlength="30" value=<%=direc%> pattern="[a-Z]{5,30}" title="La descripcion debe tener de 5 a 30 caracteres" required/>
+	    <%} %>
 	</div>
 	</div>
 	<div class="form-group row">
 	<div class="col-xs-3">
 	<%String fch = (String)request.getAttribute("fecha");%>
 		<label for="fecha">Fecha(YYYY-MM-DD) :</label>
-		<input class="form-control" type="text" name="fecha" maxlength="20" value=<%=fch%> pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" title="Ingrese formato correcto" required/>
+		<%if(fch==null) {%><input class="form-control" type="date" name="fecha" maxlength="20"  pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" title="Ingrese formato correcto" required/>
+		<%}else{%><input class="form-control" type="date" name="fecha" maxlength="20" value=<%=fch%> pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" title="Ingrese formato correcto" required/>
+	    <%} %>
 	</div>
 	</div>
 	<div class="container">
@@ -113,8 +121,7 @@
 	<p>
 	<div div class="container">
 		<div class="form-group row">
-		<input type="reset" class="btn btn-primary" value="Limpiar"/>
-		<input type="submit" class="btn btn-primary" name="enviar" value="Enviar"/>
+		<input type="submit" class="btn btn-primary" name="enviar" value="Submit"/>
 		</div>
 	</div>
 </fieldset>

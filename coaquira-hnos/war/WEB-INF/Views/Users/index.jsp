@@ -18,6 +18,7 @@
 <ul class="pager">
   <li><a href="/users/index">Regresar...</a>
   <li><a href="/users/add">Registro</a>
+  <li><a href="/lista">Lista de registros</a>
 </ul>
 <%
 List<User> personas = (List<User>) request.getAttribute("users");

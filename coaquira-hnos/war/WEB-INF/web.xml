@@ -4,7 +4,162 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+    <servlet>
+		<servlet-name>Lista</servlet-name>
+		<servlet-class>controller.lista.ListaControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Lista</servlet-name>
+		<url-pattern>/lista</url-pattern>
+	</servlet-mapping>
+	
+    <servlet>
+		<servlet-name>Report2</servlet-name>
+		<servlet-class>controller.invoices.ReportInicio</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Report2</servlet-name>
+		<url-pattern>/invoices/reportInicio</url-pattern>
+	</servlet-mapping>
 <servlet>
+		<servlet-name>Report</servlet-name>
+		<servlet-class>controller.invoices.Report</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Report</servlet-name>
+		<url-pattern>/invoices/report</url-pattern>
+	</servlet-mapping>
+    
+    <servlet>
+		<servlet-name>ControllerMaterialsControllerAdd</servlet-name>
+		<servlet-class>controller.materials.controller.ControllerMaterialsControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerMaterialsControllerAdd</servlet-name>
+		<url-pattern>/materialsController/add</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ControllerMaterialsControllerView</servlet-name>
+		<servlet-class>controller.materials.controller.ControllerMaterialsControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerMaterialsControllerView</servlet-name>
+		<url-pattern>/materialsController/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ControllerMaterialsControllerDelete</servlet-name>
+		<servlet-class>controller.materials.controller.ControllerMaterialsControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerMaterialsControllerDelete</servlet-name>
+		<url-pattern>/materialsController/delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ControllerMaterialsControllerEdit</servlet-name>
+		<servlet-class>controller.materials.controller.ControllerMaterialsControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerMaterialsControllerEdit</servlet-name>
+		<url-pattern>/materialsController/edit</url-pattern>
+	</servlet-mapping>
+    <servlet>
+		<servlet-name>ControllerMaterialsControllerIndex</servlet-name>
+		<servlet-class>controller.materials.controller.ControllerMaterialsControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerMaterialsControllerIndex</servlet-name>
+		<url-pattern>/materialsController</url-pattern>
+	</servlet-mapping>
+    
+    
+    
+    <servlet>
+		<servlet-name>ProjectsControllerAdd</servlet-name>
+		<servlet-class>controller.project.ProjectsControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectsControllerAdd</servlet-name>
+		<url-pattern>/projects/add</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ProjectsControllerView</servlet-name>
+		<servlet-class>controller.project.ProjectsControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectsControllerView</servlet-name>
+		<url-pattern>/projects/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ProjectsControllerDelete</servlet-name>
+		<servlet-class>controller.project.ProjectsControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectsControllerDelete</servlet-name>
+		<url-pattern>/projects/delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ProjectsControllerEdit</servlet-name>
+		<servlet-class>controller.project.ProjectsControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectsControllerEdit</servlet-name>
+		<url-pattern>/projects/edit</url-pattern>
+	</servlet-mapping>
+    <servlet>
+		<servlet-name>ProjectsControllerIndex</servlet-name>
+		<servlet-class>controller.project.ProjectsControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectsControllerIndex</servlet-name>
+		<url-pattern>/projects</url-pattern>
+	</servlet-mapping>
+    
+    
+    <servlet>
+		<servlet-name>ReportControllerAdd</servlet-name>
+		<servlet-class>controller.report.ReportControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportControllerAdd</servlet-name>
+		<url-pattern>/report/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ReportControllerView</servlet-name>
+		<servlet-class>controller.report.ReportControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportControllerView</servlet-name>
+		<url-pattern>/report/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ReportControllerDelete</servlet-name>
+		<servlet-class>controller.report.ReportControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportControllerDelete</servlet-name>
+		<url-pattern>/report/delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ReportControllerEdit</servlet-name>
+		<servlet-class>controller.report.ReportControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportControllerEdit</servlet-name>
+		<url-pattern>/report/edit</url-pattern>
+	</servlet-mapping>
+    <servlet>
+		<servlet-name>ReportControllerIndex</servlet-name>
+		<servlet-class>controller.report.ReportControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportControllerIndex</servlet-name>
+		<url-pattern>/report</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+    <servlet>
 		<servlet-name>UsuarioControllerAdd</servlet-name>
 		<servlet-class>controller.usuario.UsuarioControllerAdd</servlet-class>
 	</servlet>
@@ -12,7 +167,6 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>UsuarioControllerAdd</servlet-name>
 		<url-pattern>/usuario/add</url-pattern>
 	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>UsuarioControllerDelete</servlet-name>
 		<servlet-class>controller.usuario.UsuarioControllerDelete</servlet-class>
@@ -21,7 +175,6 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>UsuarioControllerDelete</servlet-name>
 		<url-pattern>/usuario/delete</url-pattern>
 	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>UsuarioControllerEdit</servlet-name>
 		<servlet-class>controller.usuario.UsuarioControllerEdit</servlet-class>
@@ -30,7 +183,6 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>UsuarioControllerEdit</servlet-name>
 		<url-pattern>/usuario/edit</url-pattern>
 	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>UsuarioControllerIndex</servlet-name>
 		<servlet-class>controller.usuario.UsuarioControllerIndex</servlet-class>
@@ -39,7 +191,6 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>UsuarioControllerIndex</servlet-name>
 		<url-pattern>/usuario</url-pattern>
 	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>UsuarioControllerView</servlet-name>
 		<servlet-class>controller.usuario.UsuarioControllerView</servlet-class>
@@ -49,7 +200,9 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<url-pattern>/usuario/view</url-pattern>
 	</servlet-mapping>
     
-<servlet>
+	
+	
+    <servlet>
 		<servlet-name>MaterialsControllerAdd</servlet-name>
 		<servlet-class>controller.materials.MaterialsControllerAdd</servlet-class>
 	</servlet>
@@ -90,6 +243,8 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<url-pattern>/materials</url-pattern>
 	</servlet-mapping>
 
+	
+	
 	<servlet>
 		<servlet-name>Lab08_20130867</servlet-name>
 		<servlet-class>controller.Lab08_20130867Servlet</servlet-class>
@@ -281,48 +436,40 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
 	
 	
-	<servlet>
-		<servlet-name>ListFacturas</servlet-name>
-		<servlet-class>controller.invoices.ListFacturas</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ListFacturas</servlet-name>
-		<url-pattern>/invoices/listFacturas</url-pattern>
-	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>SaveFactura</servlet-name>
-		<servlet-class>controller.invoices.SaveFactura</servlet-class>
+		<servlet-name>InvoicesControllerAdd</servlet-name>
+		<servlet-class>controller.invoices.InvoicesControllerAdd</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SaveFactura</servlet-name>
+		<servlet-name>InvoicesControllerAdd</servlet-name>
 		<url-pattern>/invoices/saveFactura</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>RemoveFactura</servlet-name>
-		<servlet-class>controller.invoices.RemoveFactura</servlet-class>
+		<servlet-name>InvoicesControllerDelete</servlet-name>
+		<servlet-class>controller.invoices.InvoicesControllerDelete</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>RemoveFactura</servlet-name>
+		<servlet-name>InvoicesControllerDelete</servlet-name>
 		<url-pattern>/invoices/removeFactura</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>Invoices</servlet-name>
-		<servlet-class>controller.invoices.Invoices</servlet-class>
+		<servlet-name>InvoicesControllerIndex</servlet-name>
+		<servlet-class>controller.invoices.InvoicesControllerIndex</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Invoices</servlet-name>
+		<servlet-name>InvoicesControllerIndex</servlet-name>
 		<url-pattern>/invoices</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>Renovar</servlet-name>
-		<servlet-class>controller.invoices.Renovar</servlet-class>
+		<servlet-name>InvoicesControllerEdit</servlet-name>
+		<servlet-class>controller.invoices.InvoicesControllerEdit</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Renovar</servlet-name>
+		<servlet-name>InvoicesControllerEdit</servlet-name>
 		<url-pattern>/invoices/renovar</url-pattern>
 	</servlet-mapping>
 	

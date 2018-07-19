@@ -18,40 +18,38 @@
   <li><a href="/usuario">Regresar...</a>
   <li><a href="/usuario/add">Registro</a>
 </ul>
-<div class="container"> 
 <form method="get" action="/usuario/add">
-<span class="title">Create User</span>
+<fieldset><legend>Registro de control de Usuarios</legend>
+<div class="container">
 <%if(mensaje!=null){ %>
 <p><%=mensaje %></p>
 <%}%>
-<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">DNI</span>
-  </div>
-  <input type="text" name="dni" pattern="[0-9]{8}" required="">
+<div class="form-group row">
+  <label for="inputEmail3" class="col-sm-2 col-form-label">DNI</label>
+    <div class="col-sm-10">
+  <input type="text" class="form-control" name="dni" pattern="[0-9]{8}" required>
 </div>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+</div>
+<div class="form-group row">
+  <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+    <div class="col-sm-10">
+  <input type="text" class="form-control" name="name"  pattern="[a-zA-Z ]+"required>
   </div>
-  <input type="text" name="name"  pattern="[a-zA-Z ]+"required>
   </div>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Apellido</span>
+<div class="form-group row">
+  <label for="inputEmail3" class="col-sm-2 col-form-label">Apellido</label>
+    <div class="col-sm-10">
+  <input type="text" class="form-control" name="apellido"  pattern="[a-zA-Z ]+" required>
   </div>
-  <input type="text" name="apellido"  pattern="[a-zA-Z ]+" required="">
   </div>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+<div class="form-group row">
+  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+  <input type="email" class="form-control" name="email"   required>
   </div>
-  <input type="email" name="email"   required="">
   </div>
-  <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-</table>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
 </form>
-</div>
 </body>
 </html>

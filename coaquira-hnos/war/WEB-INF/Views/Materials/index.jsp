@@ -26,8 +26,8 @@ List<Material>materials=(List<Material>)request.getAttribute("materials");
 </ul>
 
 <div class="container">
-<table class="table">
- <h3>Materials</h3>
+<table class="table table-hover">
+<h2>Mostrando <%= materials.size() %> resultados</h2>
   <thead>
     <tr>
       	 <th scope="col">id</th>

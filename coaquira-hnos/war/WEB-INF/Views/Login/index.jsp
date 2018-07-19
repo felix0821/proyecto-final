@@ -87,27 +87,39 @@
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Anuncios</h2><br>
-  <h4>nuevos anuncios</h4>
+  <h4>enlace de los videos</h4>
   <div class="row text-center slideanim">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <img src="nan.jpg" alt="vacio" width="400" height="300">
-        <p><strong>sin titulo</strong></p>
-        <p>sin contenido</p>
+        <p><strong>Felix Montalico</strong></p>
+        <p><li><a href="https://www.youtube.com/watch?v=zec4t3C4ecg&t=12s">Ingles</a></li></p>
+        <p><li><a href="https://www.youtube.com/watch?v=OiYPwbdEge4&t=17s">Español</a></li></p>
+        <p><li><a href="https://github.com/felix0821/proyecto-final">GitHub</a></li></p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <img src="nan.jpg" alt="vacio" width="400" height="300">
-        <p><strong>sin titulo</strong></p>
-        <p>sin contenido</p>
+        <p><strong>Jose Mamani</strong></p>
+        <p><li><a href="https://www.youtube.com/watch?v=ZJctf7aknMA">Ingles</a></li></p>
+        <p><li><a href="https://www.youtube.com/watch?v=C-FkUo2hVZ0">Español</a></li></p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <img src="nan.jpg" alt="vacio" width="400" height="300">
-        <p><strong>sin titulo</strong></p>
-        <p>sin contenido</p>
+        <p><strong>Rocio Peralta</strong></p>
+        <p><li><a href="https://www.youtube.com/watch?v=lFayUWLA078&feature=youtu.be">Ingles</a></li></p>
+        <p><li><a href="https://www.youtube.com/watch?v=ACcPAOdbmCU&feature=youtu.be">Español</a></li></p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="nan.jpg" alt="vacio" width="400" height="300">
+        <p><strong>David Peña</strong></p>
+        <p><li><a href="https://www.youtube.com/watch?v=2ET3rg6WQpM&feature=youtu.be">Ingles</a></li></p>
+        <p><li><a href="https://www.youtube.com/watch?v=llXvQC6sGMA&feature=youtu.be">Español</a></li></p>
       </div>
     </div>
   </div><br>
@@ -159,21 +171,40 @@
 	  <li><a href="/usuario">Verificar</a></li>
     </div>
     <div class="col-sm-4">
-      <span class=" glyphicon glyphicon-usd  logo-small"></span>
+      <span class=" glyphicon glyphicon-open-file  logo-small"></span>
       <h4>FACTURAS</h4>
-      <p>veamos las facturas de la empresa..</p>
+      <p>veamos las facturas y transacciones de la empresa..</p>
 	  <li><a href="/invoices">Verificar</a></li>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock logo-small"></span>
       <h4>MATERIALES</h4>
-      <p>veamos con que recursos contamos..</p>
+      <p>veamos con que recursos y materiales contamos..</p>
 	  <li><a href="/materials">Verificar</a></li>
     </div>
   </div>
-  <br><br><br><br>
+  <br><br>
+  <div class="row slideanim">
+  <div class="col-sm-4">
+      <span class="glyphicon glyphicon-usd logo-small"></span>
+      <h4>REPORTES</h4>
+      <p>veamos con que reportes de gastos contamos..</p>
+	  <li><a href="/report">Verificar</a></li>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-scale logo-small"></span>
+      <h4>ACTIVIDADES</h4>
+      <p>veamos los servicios y actividades que ofrecemos..</p>
+	  <li><a href="/projects">Verificar</a></li>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home logo-small"></span>
+      <h4>ALMACEN</h4>
+      <p>veamos el control del almacén..</p>
+	  <li><a href="/materialsController">Verificar</a></li>
+    </div>
 </div>
-
+</div>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>

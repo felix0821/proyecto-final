@@ -17,7 +17,7 @@ public class Factura{
 	private Long id;
 	
 	@Persistent
-	private int numFactura=0;
+	private int numFactura;
 	
 	@Persistent
 	private String nameCL;
@@ -49,7 +49,6 @@ public class Factura{
 	public Factura(String nameCL, String rucCL, String fecha, String direccion, ArrayList<Double>can, 
 			ArrayList<String>des, ArrayList<Double>uni, ArrayList<Double>val, double total) {
 		super();
-		this.numFactura=numFactura+1;
 		this.nameCL = nameCL;
 		this.rucCL = rucCL;
 		this.fecha = fecha;
@@ -66,8 +65,8 @@ public class Factura{
 		return Long.toString(id);
 	}
 
-	public void setId(String idPersona) {
-		Long clave =Long.parseLong(idPersona);
+	public void setId(String id) {
+		Long clave =Long.parseLong(id);
 		this.id = clave;
 	}
 	
